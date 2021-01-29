@@ -1,4 +1,4 @@
-# Sf-Sandbox_Erika
+# Sf-Sandbox_Erika Version 2
 
 ## Instrucciones para crear un repositorio en github
 1. Instala Git
