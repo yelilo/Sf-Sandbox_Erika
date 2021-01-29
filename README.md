@@ -36,3 +36,34 @@ Puedes visualizar las ramas existentes
 Genera una nueva rama con las siguientes lineas
 1. > git branch _Nombre_de_la_rama_
 2. > git checkout _Nombre_de_la_rama_
+
+## Subir cambios a proyecto
+1. Revisa si hay modificaciones en tu proyecto
+    > git status
+
+    Veras en la consola un codigo similar a este
+    ~~~
+    $ git status
+    On branch myfeaturebranch
+    Changes not staged for commit:
+    (use "git add <file>..." to update what will be committed)
+    (use "git restore <file>..." to discard changes in working directory)
+            modified:   README.md
+
+    no changes added to commit (use "git add" and/or "git commit -a")
+    ~~~
+
+2. Añade tus cambios a un paquete de subirda (arbol)
+    > git add README.md
+
+3. Revisa que se haya añadido tu archivo revisando el Status nuevamente como el paso 1
+    ~~~
+    $ git status
+    On branch myfeaturebranch
+    Changes to be committed:
+    (use "git restore --staged <file>..." to unstage)
+            modified:   README.md
+    ~~~
+
+4. Crea nota con con cambios realizados
+    > git commit -m "Detalle de los cambios a subir"
