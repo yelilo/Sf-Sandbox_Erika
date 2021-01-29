@@ -1,5 +1,4 @@
-# Sf-Sandbox_Erika Version 2
-
+# Sf-Sandbox_Erika
 ## Instrucciones para crear un repositorio en github
 1. Instala Git
 2. Crea cuenta en github
@@ -29,7 +28,11 @@ Para usuarios de Mac o Linux, ingrese:
 Con la configuración inicial generamos la Rama Maestra del repositorio, lo ideal es trabajar en distintas ramas si se tiene varios desarrollos involucrados para evitar que choquen y encontrar rupturas que puede aver entre desarrollos.
 
 Escribe
+<<<<<<< HEAD
 > git branch
+=======
+> git brach
+>>>>>>> origin/main
 
 Puedes visualizar las ramas existentes
 
@@ -44,7 +47,11 @@ Genera una nueva rama con las siguientes lineas
     Veras en la consola un codigo similar a este
     ~~~
     $ git status
+<<<<<<< HEAD
     On branch NombreDeTuRama
+=======
+    On branch myfeaturebranch
+>>>>>>> origin/main
     Changes not staged for commit:
     (use "git add <file>..." to update what will be committed)
     (use "git restore <file>..." to discard changes in working directory)
@@ -59,13 +66,18 @@ Genera una nueva rama con las siguientes lineas
 3. Revisa que se haya añadido tu archivo revisando el Status nuevamente como el paso 1
     ~~~
     $ git status
+<<<<<<< HEAD
     On branch NombreDeTuRama
+=======
+    On branch myfeaturebranch
+>>>>>>> origin/main
     Changes to be committed:
     (use "git restore --staged <file>..." to unstage)
             modified:   README.md
     ~~~
 
 4. Crea nota con con cambios realizados
+<<<<<<< HEAD
     > git commit -m "Detalle de los cambios a subir"
 
     ~~~
@@ -102,3 +114,6 @@ Genera una nueva rama con las siguientes lineas
     * [new branch]      myfeaturebranch -> myfeaturebranch
     Branch 'myfeaturebranch' set up to track remote branch 'myfeaturebranch' from 'origin'.
     ~~~
+=======
+    > git commit -m "Detalle de los cambios a subir"
+>>>>>>> origin/main
