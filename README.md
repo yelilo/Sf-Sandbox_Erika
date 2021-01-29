@@ -1,5 +1,4 @@
 # Sf-Sandbox_Erika
-
 ## Instrucciones para crear un repositorio en github
 1. Instala Git
 2. Crea cuenta en github
@@ -29,7 +28,11 @@ Para usuarios de Mac o Linux, ingrese:
 Con la configuración inicial generamos la Rama Maestra del repositorio, lo ideal es trabajar en distintas ramas si se tiene varios desarrollos involucrados para evitar que choquen y encontrar rupturas que puede aver entre desarrollos.
 
 Escribe
+<<<<<<< HEAD
+> git branch
+=======
 > git brach
+>>>>>>> origin/main
 
 Puedes visualizar las ramas existentes
 
@@ -44,7 +47,11 @@ Genera una nueva rama con las siguientes lineas
     Veras en la consola un codigo similar a este
     ~~~
     $ git status
+<<<<<<< HEAD
+    On branch NombreDeTuRama
+=======
     On branch myfeaturebranch
+>>>>>>> origin/main
     Changes not staged for commit:
     (use "git add <file>..." to update what will be committed)
     (use "git restore <file>..." to discard changes in working directory)
@@ -59,11 +66,54 @@ Genera una nueva rama con las siguientes lineas
 3. Revisa que se haya añadido tu archivo revisando el Status nuevamente como el paso 1
     ~~~
     $ git status
+<<<<<<< HEAD
+    On branch NombreDeTuRama
+=======
     On branch myfeaturebranch
+>>>>>>> origin/main
     Changes to be committed:
     (use "git restore --staged <file>..." to unstage)
             modified:   README.md
     ~~~
 
 4. Crea nota con con cambios realizados
+<<<<<<< HEAD
     > git commit -m "Detalle de los cambios a subir"
+
+    ~~~
+    $ git commit -m "Añade informacion de como integrar proyecto de salesforce a github, usando git"
+    [NombreDeTuRama 8f70286] Añade informacion de como integrar proyecto de salesforce a github, usando git
+    1 file changed, 31 insertions(+)
+    ~~~
+
+5. Revisa que tu Commit se haya documentado correctamente
+    > git status
+    ~~~
+    $ git status
+    On branch NombreDeTuRama
+    nothing to commit, working tree clean
+    ~~~
+
+## Enviar cambios a repositorio remoto
+1. Escribe la siguiente linea en consola para enviar tus cambios al servidor de github
+    > git push -u origin NombreDeTuRama
+    ~~~
+    $ git push -u origin myfeaturebranch
+    Enumerating objects: 8, done.
+    Counting objects: 100% (8/8), done.
+    Delta compression using up to 4 threads
+    Compressing objects: 100% (4/4), done.
+    Writing objects: 100% (6/6), 1.71 KiB | 878.00 KiB/s, done.
+    Total 6 (delta 2), reused 0 (delta 0), pack-reused 0
+    remote: Resolving deltas: 100% (2/2), done.
+    remote:
+    remote: Create a pull request for 'myfeaturebranch' on GitHub by visiting:
+    remote:      https://github.com/yelilo/Sf-Sandbox_Erika/pull/new/myfeaturebranch
+    remote:
+    To https://github.com/yelilo/Sf-Sandbox_Erika.git
+    * [new branch]      myfeaturebranch -> myfeaturebranch
+    Branch 'myfeaturebranch' set up to track remote branch 'myfeaturebranch' from 'origin'.
+    ~~~
+=======
+    > git commit -m "Detalle de los cambios a subir"
+>>>>>>> origin/main
